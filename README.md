@@ -2,4 +2,4 @@
 
 ORIE 4741: Learning with Big Messy Data
 
-Richard Zheng (rz98), Iris Li (icl5), Catherine Appleby (caa96)
+Richard Zheng (rz98), Iris Li (icl5)
