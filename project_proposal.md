@@ -1,6 +1,6 @@
 # ORIE 4741 Project Proposal: Analyzing 911 Calls in New York City
 
-## Richard Zheng (rz98), Iris Li (icl5)
+## Richard Zheng (rz98), Iris Li (icl5), Peter Gribizis (pjg222)
 
 **Background:** 
 
