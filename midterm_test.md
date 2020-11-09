@@ -43,12 +43,13 @@ We developed models focused on 2 main statistics: the final severity level code 
 To best capture the final severity level and incident response time, we initially used a least squares linear approximator with an 80/20 split.  Our model fairly accurately captured final severity level but struggled to fit incident response time.
 
 
-![Image Test](test.png)
+![Image Test](test.PNG)
 
 We also tested the accuracy of tree based algorithms, namely SciKitLearn’s decision tree and random forest regressors.  We found that the decision trees did not perform as well on our dataset as compared to the least squares approach. 
 
 
-|   	   Model Mean Squared Errors                     |  Least Squares 	| Decision Tree  	|   Random Forest	|   	|
+|   	   Model Mean Squared Errors                     |
+|	|  Least Squares 	| Decision Tree  	|   Random Forest	|
 |---	                        |---	|---	|---	|---	|
 |Final Severity Level   	    |   0.72757	| 0.77546 	|   0.74934	|
 |   Incident Response Seconds	|  238.64   |   254.61	|   244.89	|   	|
@@ -57,12 +58,12 @@ We also tested the accuracy of tree based algorithms, namely SciKitLearn’s dec
 
 Our initial analysis based on the first few models put together seemed to be underfitting the input data and yielding inaccurate predictions to our output space. We have made the assumption that the features we were initially trying to model were “too messy” in that there does not seem to be a linear correlation between our predictors and final severity level code/incident response seconds. A histogram of incident response seconds (the difference in time from when a dispatch call is taken to when emergency services arrive on site) shows that the distribution is slightly right-skewed with most times falling around the average of 461 seconds.
 
-![Image First](first.png)
+![Image First](first.PNG)
 
 We want to see now if we can predict whether a given call will take more than the average of incident response seconds (specifically more than the third quartile), given the same feature space so that given an initial severity level, dispatch operators can know where more resources are needed for a certain call. We thought to explore how long it took for a dispatch operator to handle a call/situation, but as you can see from the histogram below, there is very little variability in that data. 
 
 
-![Image Second](second.png)
+![Image Second](second.PNG)
 
 Additionally, we decided to drop the initial severity level from our output space as when you compare histograms of the initial and final severity levels, they look basically identical. 
 
