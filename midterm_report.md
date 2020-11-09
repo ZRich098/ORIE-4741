@@ -64,7 +64,7 @@ We want to see now if we can predict whether a given call will take more than th
 
 ![Image Second](second.PNG)
 
-Additionally, we decided to drop the initial severity level from our output space as when you compare histograms of the initial and final severity levels, they look basically identical. 
+Additionally, we decided to drop the initial severity level from our output space as when you compare initial and final severity levels, they are basically identical. 
 
 We will continue testing other models (quantile regression, regression tree, nearest neighbors, etc.) to see if we can find a better fitting model to data that falls in the upper quartile of incident response seconds to predict which callers will end up taking a longer period of time to reach. Using a full calendar year of data (2019) should help us avoid underfitting, as well as having 400,000+ data points to fit, and seeing as we have data from 2008, we can check other past years to see if our model is overfitting to 2019. 
 
