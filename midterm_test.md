@@ -13,7 +13,7 @@ The current Covid pandemic has made the necessity of 911 call analyses more appa
 
 ### Dataset
 
-For our project, we are relying on the [EMS Dispatch Data] (https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj) from NYC.  
+For our project, we are relying on the [EMS Dispatch Data](https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj) from NYC.  
 
 
 This dataset has 20 million EMS call entries as recorded by the EMS Computer Aided Dispatch System from 2008 to present. The 31 features include initial and final call types with time stamps, initial and final severity level codes, dispatch and incident response times, location information like zip codes and districts, and dispatch location.
@@ -34,7 +34,7 @@ Our initial outputs consisted of the time from when the incident was first repor
 We created some visualizations to identify potential outliers. Since we expected zipcode to be an important feature, we plotted it against the average and standard deviation to look for outliers after preprocessing. It appears that there are a few outliers, but most of the zipcodes have relatively similar average response times, since dispatch locations are already fairly optimized.
 
 
-![Image Last](last.png)
+![Image Last](last.PNG)
 
 ### Data Analysis
 
