@@ -48,7 +48,6 @@ To best capture the final severity level and incident response time, we initiall
 We also tested the accuracy of tree based algorithms, namely SciKitLearn’s decision tree and random forest regressors.  We found that the decision trees did not perform as well on our dataset as compared to the least squares approach. 
 
 
-|   	   Model Mean Squared Errors                     |
 |	|  Least Squares 	| Decision Tree  	|   Random Forest	|
 |---	                        |---	|---	|---	|---	|
 |Final Severity Level   	    |   0.72757	| 0.77546 	|   0.74934	|
